@@ -1,8 +1,12 @@
-const prettier = require("prettier");
-const yaml = require("js-yaml");
+import pluginPug from '@11ty/eleventy-plugin-pug';
+import yaml from 'js-yaml';
+import prettier from 'prettier';
+
 let prettierOptions;
 
-module.exports = function (eleventyConfig) {
+export default function (eleventyConfig) {
+  eleventyConfig.addPlugin(pluginPug);
+
   eleventyConfig.addWatchTarget('./src/');
 
   eleventyConfig.addDataExtension("yaml", contents => yaml.load(contents));
