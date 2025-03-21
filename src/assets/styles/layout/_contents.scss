@@ -24,4 +24,18 @@
 
 .l-flex {
   display: flex;
+
+  &--expand {
+    @extend .l-flex;
+
+    > * {
+      flex-shrink: 0;
+    }
+  }
+
+  &--expandScroll {
+    @extend .l-flex--expand;
+
+    overflow-x: scroll;
+  }
 }
