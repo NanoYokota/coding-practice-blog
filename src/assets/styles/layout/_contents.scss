@@ -24,4 +24,12 @@
 
 .l-flex {
   display: flex;
+
+  &--expand {
+    @extend .l-flex;
+
+    > * {
+      flex-shrink: 0;
+    }
+  }
 }
