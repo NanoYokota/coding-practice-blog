@@ -14,3 +14,14 @@
 //     overflow-x: clip;
 //   }
 // }
+
+.l-background {
+  &--black {
+    background-color: $pjc-bg-black;
+    color: $pjc-txt-white;
+  }
+}
+
+.l-flex {
+  display: flex;
+}
