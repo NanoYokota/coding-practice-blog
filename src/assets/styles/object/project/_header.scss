@@ -2,6 +2,11 @@
 @use 'sass:math';
 
 .p-header {
+  background-color: $color-white;
+
+  position: sticky;
+  top: 0;
+
   @include mq-up(md) {
   }
 
