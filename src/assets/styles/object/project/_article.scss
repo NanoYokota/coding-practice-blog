@@ -1,0 +1,17 @@
+@use '../../global' as *;
+@use 'sass:math';
+
+.p-article {
+  &__article {
+    + .p-article__article {
+      margin-top: 30px;
+    }
+  }
+
+  &__title {
+    margin-top: 10px;
+
+    font-weight: bold;
+    font-size: $font-l;
+  }
+}

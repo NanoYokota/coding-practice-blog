@@ -16,3 +16,8 @@
 .u-txtHide {
   @include text-hide();
 }
+
+.u-imageWidth100 {
+  width: 100%;
+  height: auto;
+}

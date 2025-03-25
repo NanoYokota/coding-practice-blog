@@ -1,19 +1,8 @@
 @use '../global' as *;
 
-// .l-wrapper {
-//   display: flex;
-//   flex-direction: column;
-//   min-height: 100vh;
-// }
-
-// .l-main {
-//   max-width: 100%;
-//   flex: 1;
-//   overflow-x: hidden;
-//   @supports (overflow-x: clip) {
-//     overflow-x: clip;
-//   }
-// }
+.l-main {
+  padding: 30px 16px;
+}
 
 .l-background {
   &--black {
@@ -37,5 +26,14 @@
     @extend .l-flex--expand;
 
     overflow-x: scroll;
+  }
+}
+
+.l-columns {
+  display: grid;
+  grid-template-columns: 1fr;
+
+  @include mq-up(md) {
+    grid-template-columns: 2fr 1fr;
   }
 }

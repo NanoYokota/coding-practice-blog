@@ -1,0 +1,13 @@
+@use '../../global' as *;
+@use 'sass:math';
+
+.c-link {
+  width: 100%;
+  margin-top: 15px;
+
+  text-align: center;
+
+  > a {
+    border-bottom: 1px solid $pjc-border-black;
+  }
+}

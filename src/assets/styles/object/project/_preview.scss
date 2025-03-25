@@ -1,0 +1,40 @@
+@use '../../global' as *;
+@use 'sass:math';
+
+.p-preview {
+  padding: 10px 0;
+
+  &__article {
+    + .p-preview__article {
+      margin-top: 70px;
+    }
+  }
+
+  &__title {
+    font-size: $font-xxl;
+    font-weight: bold;
+  }
+
+  &__spans {
+    margin-top: 15px;
+  }
+
+  &__tag {
+    margin-left: 20px;
+  }
+
+  &__image {
+    margin-top: 10px;
+  }
+
+  &__text {
+    padding: 0 40px;
+    margin-top: 10px;
+
+    font-size: $font-l;
+  }
+
+  &__link {
+    margin-top: 30px;
+  }
+}

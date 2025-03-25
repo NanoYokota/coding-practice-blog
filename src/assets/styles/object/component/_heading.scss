@@ -2,6 +2,12 @@
 @use 'sass:math';
 
 .c-heading {
+  &--aside {
+    font-weight: bold;
+    font-size: $font-xl;
+    text-align: center;
+  }
+
   @include mq-up(md) {
   }
 }

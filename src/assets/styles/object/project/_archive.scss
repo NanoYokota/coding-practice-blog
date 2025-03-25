@@ -1,0 +1,20 @@
+@use '../../global' as *;
+@use 'sass:math';
+
+.p-archive {
+  margin-top: 60px;
+
+  &__list {
+    margin-top: 30px;
+  }
+
+  &__item {
+    padding: 20px;
+
+    border-top: 1px solid $pjc-border-gray;
+
+    &:last-child {
+      border-bottom: 1px solid $pjc-border-gray;
+    }
+  }
+}

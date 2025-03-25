@@ -21,6 +21,12 @@
     <meta property="twitter:description" content="web page description." />
     <!-- stylesheet-->
     <link rel="stylesheet" href="./assets/styles/app.css?ver=1.0.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Noto+Sans:ital,wdth,wght@0,62.5..100,100..900;1,62.5..100,100..900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div class="l-wrapper">
@@ -39,101 +45,122 @@
         </nav>
       </header>
       <main class="l-main">
-        <section>
-          <article>
-            <img src="./assets/images/pickup1.jpg.webp" alt="" />
-            <h2>タイトルテキストテキストテキストテキストテキストテキストテキスト</h2>
-            <a href="/">READ MORE</a>
+        <section class="p-article">
+          <article class="p-article__article">
+            <img class="u-imageWidth100" src="./assets/images/pickup1.jpg.webp" alt="" width="384" height="216" />
+            <h2 class="p-article__title">タイトルテキストテキストテキストテキストテキストテキストテキスト</h2>
+            <div class="c-link"><a href="/">READ MORE</a></div>
           </article>
-          <article>
-            <img src="./assets/images/pickup2.jpg.webp" alt="" />
-            <h2>タイトルテキストテキストテキストテキストテキストテキストテキスト</h2>
-            <a href="/">READ MORE</a>
+          <article class="p-article__article">
+            <img class="u-imageWidth100" src="./assets/images/pickup2.jpg.webp" alt="" width="384" height="216" />
+            <h2 class="p-article__title">タイトルテキストテキストテキストテキストテキストテキストテキスト</h2>
+            <div class="c-link"><a href="/">READ MORE</a></div>
           </article>
-          <article>
-            <img src="./assets/images/pickup3.jpg.webp" alt="" />
-            <h2>タイトルテキストテキストテキストテキストテキストテキストテキスト</h2>
-            <a href="/">READ MORE</a>
+          <article class="p-article__article">
+            <img class="u-imageWidth100" src="./assets/images/pickup3.jpg.webp" alt="" width="384" height="216" />
+            <h2 class="p-article__title">タイトルテキストテキストテキストテキストテキストテキストテキスト</h2>
+            <div class="c-link"><a href="/">READ MORE</a></div>
           </article>
         </section>
-        <div>
-          <section>
-            <article>
-              <h2>タイトルテキストテキストテキストテキストテキストテキストテキスト</h2>
-              <div><time datetime="2020-01-01">2020/01/01</time><span>カテゴリ1</span></div>
-              <img src="./assets/images/main1.jpg.webp" alt="" />
-              <p>
+        <div class="p-columns l-columns">
+          <section class="p-preview">
+            <article class="p-preview__article">
+              <h2 class="p-preview__title">タイトルテキストテキストテキストテキストテキストテキストテキスト</h2>
+              <div class="p-preview__spans">
+                <time datetime="2020-01-01">2020/01/01</time><span class="p-preview__tag">カテゴリ1</span>
+              </div>
+              <img
+                class="p-preview__image u-imageWidth100"
+                src="./assets/images/main1.jpg.webp"
+                alt=""
+                width="384"
+                height="216"
+              />
+              <p class="p-preview__text">
                 本文テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
                 テキストテキストテキストテキストテキストテキストテキストテキストテキスト
               </p>
-              <a href="/">READ MORE</a>
+              <div class="p-preview__link c-link"><a href="/">READ MORE</a></div>
             </article>
-            <article>
-              <h2>タイトルテキストテキストテキストテキストテキストテキストテキスト</h2>
-              <div><time datetime="2020-01-01">2020/01/01</time><span>カテゴリ1</span></div>
-              <img src="./assets/images/main2.jpg.webp" alt="" />
-              <p>
+            <article class="p-preview__article">
+              <h2 class="p-preview__title">タイトルテキストテキストテキストテキストテキストテキストテキスト</h2>
+              <div class="p-preview__spans">
+                <time datetime="2020-01-01">2020/01/01</time><span class="p-preview__tag">カテゴリ1</span>
+              </div>
+              <img
+                class="p-preview__image u-imageWidth100"
+                src="./assets/images/main2.jpg.webp"
+                alt=""
+                width="384"
+                height="216"
+              />
+              <p class="p-preview__text">
                 本文テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
                 テキストテキストテキストテキストテキストテキストテキストテキストテキスト
               </p>
-              <a href="/">READ MORE</a>
+              <div class="p-preview__link c-link"><a href="/">READ MORE</a></div>
             </article>
-            <article>
-              <h2>タイトルテキストテキストテキストテキストテキストテキストテキスト</h2>
-              <div><time datetime="2020-01-01">2020/01/01</time><span>カテゴリ1</span></div>
-              <img src="./assets/images/main3.jpg.webp" alt="" />
-              <p>
+            <article class="p-preview__article">
+              <h2 class="p-preview__title">タイトルテキストテキストテキストテキストテキストテキストテキスト</h2>
+              <div class="p-preview__spans">
+                <time datetime="2020-01-01">2020/01/01</time><span class="p-preview__tag">カテゴリ1</span>
+              </div>
+              <img
+                class="p-preview__image u-imageWidth100"
+                src="./assets/images/main3.jpg.webp"
+                alt=""
+                width="384"
+                height="216"
+              />
+              <p class="p-preview__text">
                 本文テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
                 テキストテキストテキストテキストテキストテキストテキストテキストテキスト
               </p>
-              <a href="/">READ MORE</a>
+              <div class="p-preview__link c-link"><a href="/">READ MORE</a></div>
             </article>
           </section>
           <aside>
-            <section>
-              <img src="./assets/images/author.jpg.webp" alt="" />
-              <h2>Name Name</h2>
-              <p>
+            <section class="p-profile">
+              <img class="p-profile__image" src="./assets/images/author.jpg.webp" alt="" width="130" height="130" />
+              <h2 class="p-profile__name">Name Name</h2>
+              <p class="p-profile__text">
                 プロフィールテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
                 テキストテキストテキストテキストテキストテキストテキストテキストテキスト
               </p>
             </section>
-            <section>
-              <h2>Ranking</h2>
-              <article>
-                <h3>1位</h3>
-                <img src="./assets/images/ranking1.jpg.webp" alt="" />
+            <section class="p-ranking">
+              <h2 class="c-heading--aside">Ranking</h2>
+              <article class="p-ranking__article">
+                <img class="u-imageWidth100" src="./assets/images/ranking1.jpg.webp" alt="" width="384" height="216" />
                 <p>タイトルテキストテキストテキストテキストテキストテキスト</p>
               </article>
-              <article>
-                <h3>1位</h3>
-                <img src="./assets/images/ranking2.jpg.webp" alt="" />
+              <article class="p-ranking__article">
+                <img class="u-imageWidth100" src="./assets/images/ranking2.jpg.webp" alt="" width="384" height="216" />
                 <p>タイトルテキストテキストテキストテキストテキストテキスト</p>
               </article>
-              <article>
-                <h3>1位</h3>
-                <img src="./assets/images/ranking3.jpg.webp" alt="" />
+              <article class="p-ranking__article">
+                <img class="u-imageWidth100" src="./assets/images/ranking3.jpg.webp" alt="" width="384" height="216" />
                 <p>タイトルテキストテキストテキストテキストテキストテキスト</p>
               </article>
             </section>
-            <section>
-              <h2>Archive</h2>
-              <ul>
-                <li><a href="/">xxxx年xx月(xx)</a></li>
-                <li><a href="/">xxxx年xx月(xx)</a></li>
-                <li><a href="/">xxxx年xx月(xx)</a></li>
-                <li><a href="/">xxxx年xx月(xx)</a></li>
-                <li><a href="/">xxxx年xx月(xx)</a></li>
-                <li><a href="/">xxxx年xx月(xx)</a></li>
-                <li><a href="/">xxxx年xx月(xx)</a></li>
-                <li><a href="/">xxxx年xx月(xx)</a></li>
-                <li><a href="/">xxxx年xx月(xx)</a></li>
-                <li><a href="/">xxxx年xx月(xx)</a></li>
-                <li><a href="/">xxxx年xx月(xx)</a></li>
-                <li><a href="/">xxxx年xx月(xx)</a></li>
-                <li><a href="/">xxxx年xx月(xx)</a></li>
-                <li><a href="/">xxxx年xx月(xx)</a></li>
-                <li><a href="/">xxxx年xx月(xx)</a></li>
+            <section class="p-archive">
+              <h2 class="c-heading--aside">Archive</h2>
+              <ul class="p-archive__list">
+                <li class="p-archive__item"><a href="/">XXXX年XX月</a>(XX)</li>
+                <li class="p-archive__item"><a href="/">XXXX年XX月</a>(XX)</li>
+                <li class="p-archive__item"><a href="/">XXXX年XX月</a>(XX)</li>
+                <li class="p-archive__item"><a href="/">XXXX年XX月</a>(XX)</li>
+                <li class="p-archive__item"><a href="/">XXXX年XX月</a>(XX)</li>
+                <li class="p-archive__item"><a href="/">XXXX年XX月</a>(XX)</li>
+                <li class="p-archive__item"><a href="/">XXXX年XX月</a>(XX)</li>
+                <li class="p-archive__item"><a href="/">XXXX年XX月</a>(XX)</li>
+                <li class="p-archive__item"><a href="/">XXXX年XX月</a>(XX)</li>
+                <li class="p-archive__item"><a href="/">XXXX年XX月</a>(XX)</li>
+                <li class="p-archive__item"><a href="/">XXXX年XX月</a>(XX)</li>
+                <li class="p-archive__item"><a href="/">XXXX年XX月</a>(XX)</li>
+                <li class="p-archive__item"><a href="/">XXXX年XX月</a>(XX)</li>
+                <li class="p-archive__item"><a href="/">XXXX年XX月</a>(XX)</li>
+                <li class="p-archive__item"><a href="/">XXXX年XX月</a>(XX)</li>
               </ul>
             </section>
           </aside>

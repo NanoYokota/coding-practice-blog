@@ -22,46 +22,48 @@ block content-block
   include /_header
 
   main.l-main
-    section
+    section.p-article
       - for (let iArticle = 0; iArticle < 3; iArticle++)
-        article
-          img(src=`/assets/images/pickup${iArticle + 1}.jpg.webp`, alt="")
-          h2 タイトルテキストテキストテキストテキストテキストテキストテキスト
-          a(href="/") READ MORE
-
-    div
-      section
-        - for (let iPreview = 0; iPreview < 3; iPreview++)
-          article
-            h2 タイトルテキストテキストテキストテキストテキストテキストテキスト
-            div
-              time(datetime="2020-01-01") 2020/01/01
-              span カテゴリ1
-            img(src=`/assets/images/main${iPreview + 1}.jpg.webp`, alt="")
-            p 本文テキストテキストテキストテキストテキストテキストテキストテキスト
-              | テキストテキストテキストテキストテキストテキストテキストテキストテキスト
-              | テキストテキストテキストテキストテキストテキストテキストテキストテキスト
+        article.p-article__article
+          img.u-imageWidth100(src=`/assets/images/pickup${iArticle + 1}.jpg.webp` alt="" width="384" height="216")
+          h2.p-article__title タイトルテキストテキストテキストテキストテキストテキストテキスト
+          .c-link
             a(href="/") READ MORE
 
+    .p-columns.l-columns
+      section.p-preview
+        - for (let iPreview = 0; iPreview < 3; iPreview++)
+          article.p-preview__article
+            h2.p-preview__title タイトルテキストテキストテキストテキストテキストテキストテキスト
+            .p-preview__spans
+              time(datetime="2020-01-01") 2020/01/01
+              span.p-preview__tag カテゴリ1
+            img.p-preview__image.u-imageWidth100(src=`/assets/images/main${iPreview + 1}.jpg.webp` alt="" width="384" height="216")
+            p.p-preview__text 本文テキストテキストテキストテキストテキストテキストテキストテキスト
+              | テキストテキストテキストテキストテキストテキストテキストテキストテキスト
+              | テキストテキストテキストテキストテキストテキストテキストテキストテキスト
+            .p-preview__link.c-link
+              a(href="/") READ MORE
+
       aside
-        section
-          img(src="/assets/images/author.jpg.webp", alt="")
-          h2 Name Name
-          p  プロフィールテキストテキストテキストテキストテキストテキストテキスト
+        section.p-profile
+          img.p-profile__image(src="/assets/images/author.jpg.webp" alt="" width="130" height="130")
+          h2.p-profile__name Name Name
+          p.p-profile__text  プロフィールテキストテキストテキストテキストテキストテキストテキスト
             | テキストテキストテキストテキストテキストテキストテキストテキストテキスト
             | テキストテキストテキストテキストテキストテキストテキストテキストテキスト
-        section
-          h2 Ranking
+        section.p-ranking
+          h2.c-heading--aside Ranking
           - for (let iRanking = 0; iRanking < 3; iRanking++)
-            article
-              h3 1位
-              img(src=`/assets/images/ranking${iRanking + 1}.jpg.webp`, alt="")
+            article.p-ranking__article
+              img.u-imageWidth100(src=`/assets/images/ranking${iRanking + 1}.jpg.webp` alt="" width="384" height="216")
               p タイトルテキストテキストテキストテキストテキストテキスト
-        section
-          h2 Archive
-          ul
+        section.p-archive
+          h2.c-heading--aside Archive
+          ul.p-archive__list
             - for (let iArticle = 0; iArticle < 15; iArticle++)
-              li
-                a(href="/") xxxx年xx月(xx)
+              li.p-archive__item
+                a(href="/") XXXX年XX月
+                | (XX)
 
   include /_footer
