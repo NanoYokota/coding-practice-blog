@@ -6,6 +6,10 @@
 
   text-align: center;
 
+  @include mq-up(md) {
+    margin-top: 0;
+  }
+
   &__image {
     border-radius: 50%;
   }

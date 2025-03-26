@@ -7,10 +7,22 @@
   background-color: $pjc-bg-gray;
 
   @include mq-up(md) {
+    margin-top: 79px;
+  }
+
+  &__contents {
+    @include mq-up(md) {
+      display: flex;
+      justify-content: space-between;
+    }
   }
 
   &__about {
     margin-top: 40px;
+
+    @include mq-up(md) {
+      width: 30%;
+    }
   }
 
   &__aboutText {
@@ -43,6 +55,10 @@
 
   &__menu {
     margin-top: 30px;
+
+    @include mq-up(md) {
+      width: 30%;
+    }
   }
 
   &__menuNav {
@@ -60,6 +76,10 @@
 
   &__twitter {
     margin-top: 30px;
+
+    @include mq-up(md) {
+      width: 30%;
+    }
   }
 
   &__twitterTimeline {
@@ -73,5 +93,9 @@
 
     font-size: $font-s;
     text-align: center;
+
+    @include mq-up(md) {
+      margin-top: 60px;
+    }
   }
 }

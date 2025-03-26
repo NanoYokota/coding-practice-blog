@@ -21,7 +21,7 @@ prepend config-block
 block content-block
   include /_header
 
-  main.l-main
+  main.l-main.l-maxWidth
     section.p-article
       - for (let iArticle = 0; iArticle < 3; iArticle++)
         article.p-article__article
@@ -45,7 +45,7 @@ block content-block
             .p-preview__link.c-link
               a(href="/") READ MORE
 
-      aside
+      aside.p-aside
         section.p-profile
           img.p-profile__image(src="/assets/images/author.jpg.webp" alt="" width="130" height="130")
           h2.p-profile__name Name Name

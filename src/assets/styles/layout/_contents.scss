@@ -2,6 +2,10 @@
 
 .l-main {
   padding: 30px 16px;
+
+  @include mq-up(md) {
+    padding: 41px 16px;
+  }
 }
 
 .l-background {
@@ -36,4 +40,9 @@
   @include mq-up(md) {
     grid-template-columns: 2fr 1fr;
   }
+}
+
+.l-maxWidth {
+  max-width: 1200px;
+  margin: 0 auto;
 }
