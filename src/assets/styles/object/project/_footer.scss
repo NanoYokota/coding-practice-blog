@@ -2,6 +2,76 @@
 @use 'sass:math';
 
 .p-footer {
+  padding: 10px 16px;
+
+  background-color: $pjc-bg-gray;
+
   @include mq-up(md) {
+  }
+
+  &__about {
+    margin-top: 40px;
+  }
+
+  &__aboutText {
+    margin-top: 30px;
+  }
+
+  &__aboutList {
+    margin-top: 20px;
+  }
+
+  &__aboutItem {
+    padding-left: 12px;
+
+    position: relative;
+
+    + .p-footer__aboutItem {
+      margin-top: 5px;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+      border: 6px solid transparent;
+      border-left: 8px solid $pjc-border-black;
+    }
+  }
+
+  &__menu {
+    margin-top: 30px;
+  }
+
+  &__menuNav {
+    margin-top: 30px;
+  }
+
+  &__menuItem {
+    padding: 15px;
+    border-top: 1px solid $pjc-border-gray;
+
+    &:last-child {
+      border-bottom: 1px solid $pjc-border-gray;
+    }
+  }
+
+  &__twitter {
+    margin-top: 30px;
+  }
+
+  &__twitterTimeline {
+    margin-top: 30px;
+  }
+
+  &__copy {
+    display: block;
+    margin-top: 90px;
+    width: 100%;
+
+    font-size: $font-s;
+    text-align: center;
   }
 }

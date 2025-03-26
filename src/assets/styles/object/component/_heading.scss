@@ -8,6 +8,11 @@
     text-align: center;
   }
 
+  &--footer {
+    font-weight: bold;
+    font-size: $font-xl;
+  }
+
   @include mq-up(md) {
   }
 }

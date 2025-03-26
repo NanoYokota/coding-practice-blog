@@ -1,33 +1,35 @@
 footer.p-footer
-  section
-    h2 About
-    p テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+  section.p-footer__about
+    h2.c-heading--footer About
+    p.p-footer__aboutText テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
       | テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
       | テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
-    ul
-      li
+    ul.p-footer__aboutList
+      li.p-footer__aboutItem
         a(href="/") プロフィール詳細
-      li
+      li.p-footer__aboutItem
         a(href="/") お仕事の依頼
-      li
+      li.p-footer__aboutItem
         a(href="/") お問い合わせ
-  section
-    h2 Menu
-    nav
+
+  section.p-footer__menu
+    h2.c-heading--footer Menu
+    nav.p-footer__menuNav
       ul
-        li
+        li.p-footer__menuItem
           a(href="/") NEW
-        li
+        li.p-footer__menuItem
           a(href="/") CATEGORY
-        li
+        li.p-footer__menuItem
           a(href="/") COLUMN
-        li
+        li.p-footer__menuItem
           a(href="/") SERIES
-        li
+        li.p-footer__menuItem
           a(href="/") Q&A
-  section
-    h2 Twitter
-    div
-      a.twitter-timeline(href='https://twitter.com/X?ref_src=twsrc%5Etfw') Tweets by X
-      script(async src='https://platform.twitter.com/widgets.js' charset='utf-8')
-  small © Travel & Blog
+
+  section.p-footer__twitter
+    h2.c-heading--footer Twitter
+    .p-footer__twitterTimeline
+      <a class="twitter-timeline" data-height="315" href="https://twitter.com/X?ref_src=twsrc%5Etfw">Tweets by X</a>
+      <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+  small.p-footer__copy © Travel & Blog
