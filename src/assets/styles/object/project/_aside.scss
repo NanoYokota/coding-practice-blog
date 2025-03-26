@@ -1,4 +1,9 @@
+@use '../../global' as *;
+@use 'sass:math';
+
 .p-aside {
-  padding: 20px;
-  margin-left: 15px;
+  @include mq-up(md) {
+    padding: 20px;
+    margin-left: 15px;
+  }
 }
